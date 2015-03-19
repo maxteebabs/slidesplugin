@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Maxtee Carousel Plugin</title>    
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/ezekiel.js"></script>
+<link rel="stylesheet" type="text/css" href="css/styleSheet.css" />
+<script type="text/javascript">
+$(document).ready(function() {
+    $("ul.slider").ezekielplugin({ //this is a function in ezekiel plugin
+        width: 700,
+        height:400,
+        auto: 2000,
+        fade: 400,
+        pagination: true,
+        next: $('.next'),
+        prev: $('.prev')
+    });
+});       
+</script>
+       
+</head>
+<body>
+<div id="container">
+<div id="header"><h2>Andela plugin</h2></div>
+    
+
+
+   <div id="slidershow"> 
+       <span><img src="images/prev.png" alt="prev" class="prev" /></span>
+    <span><img src="images/prev.png" alt="next" class="next" /></span>
+    <div class="edit">
+        <ul class="slider">
+            <li><img src="images/newcar.jpg" class="resize"  /></li>
+            <li><img src="images/bugatti-veyron.jpg" class="resize" /></li>
+            <li><img src="images/newcar1.jpg" class="resize" /></li>
+            <li><img src="images/cardillacnewcar.jpg" class="resize" /></li>
+        </ul>
+    </div>
+   </div>
+
+    <div id="footer">Copyright &copy; 2015 <a href="#">Famurewa Taiwo Ezekiel</a></div>
+</div>
+</body>
+</html>

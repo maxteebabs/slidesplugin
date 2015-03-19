@@ -1,0 +1,86 @@
+div, li, ul {
+    display: block;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    margin: 0 auto;
+}
+#header {
+    width: 100%;
+    height:50px;
+    background-color:#3b5998;
+    color: white;
+    position: absolute;
+    top : 0;
+}
+#slidershow{
+    margin-top: 100px;
+    margin-left: 300px;
+    position:absolute;
+    overflow: hidden;
+}
+.slider li{
+    text-align:left;
+    width: 660px;
+    height: 400px;
+    display: block;
+    margin-left: 0px;
+}
+.slider{
+    margin-left: 0px;
+    width:660px;
+    height:400px;
+    overflow: hidden;
+    list-style:none;
+    display: block;
+}
+.resize{
+    width : 660px;
+}
+.prev, .next{
+    cursor: pointer;
+}
+.prev{
+    position: absolute;
+    top: 200px;
+    left:40px;
+}
+.next {
+    -ms-transform: rotate(180deg); 
+    -webkit-transform: rotate(180deg); 
+    transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    right: 0px;
+    position: absolute;
+    top : 200px;
+}
+#footer {
+    margin: 0 auto;
+    width: 350px;
+    position: absolute;
+    top: 550px;
+    left:550px;
+}
+.paginate li {
+    display:block;
+    width:10px;
+    height:10px;
+    margin-right:5px;
+    cursor:pointer;
+    float:left;
+    background:#333;
+}
+.paginate .paginate-active {
+    background: #3b5998;
+}
+.paginate{
+    margin-left: 290px;
+    position: absolute;
+    top:365px;
+}
+.clear {
+    clear: both;
+}
